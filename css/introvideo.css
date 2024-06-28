@@ -1,0 +1,48 @@
+.background-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+ object-fit: contain; /*depending on your desired behavior */
+}
+  
+  .background-image video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+  }
+  
+  .background-image.fullscreen {
+    height: 100vh;
+  }
+  
+  .background-image.animate {
+    animation: bannerAnimation 1.3s ease-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards; /* Add this property */
+  }
+  
+  @keyframes bannerAnimation {
+    0% {
+      height: 100vh;
+      background-size: 100vw auto;
+    }
+    100% {
+      height: 350px;
+      background-size: cover;
+    }
+  }
+  .background-image.minimized {
+    height: 350px; /* adjust the height to minimize the video */
+    width: 100%; /* adjust the width to minimize the video */
+    top: 0; /* adjust the top position to move the video up */
+    left: 0; /* adjust the left position to move the video to the side */
+  }
+  .no-scroll {
+    overflow: hidden;
+  }

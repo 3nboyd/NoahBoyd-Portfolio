@@ -1,0 +1,91 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000; /* to ensure it stays on top */
+  }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .logo img:hover {
+    background-image: linear-gradient(to right, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #ff69b4);
+    background-size: 100% 100%;
+    background-position: 0% 100%;
+    transition: background-position 0.3s ease-in-out;
+  }
+  
+  .sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .sections li {
+    margin-right: 30px; /* increased spacing */
+  }
+  
+  .sections li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%) rotate(10deg);
+    border-right: 1px solid #fff;
+    height: 20px;
+  }
+  
+  .sections a {
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sections a:hover {
+    background-color: rgba(255, 105, 180, 0.8);
+    background-image: linear-gradient(to bottom, rgba(255, 105, 180, 0.8), rgba(255, 105, 180, 0.8));
+    padding: 10px 0;
+    border-radius: 0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sections a.active {
+    background-color: rgba(255, 105, 180, 0.8);
+    background-image: linear-gradient(to bottom, rgba(255, 105, 180, 0.8), rgba(255, 105, 180, 0.8));
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  
+  .user-profile {
+    background-color: #1a1a1a; /* darker gray */
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-profile span {
+    color: #fff;
+  }

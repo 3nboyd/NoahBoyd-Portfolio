@@ -1,0 +1,84 @@
+<!-- Contact Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/bufferloader.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<nav class="navbar">
+  <script src="js/navbar.js"></script>
+  <div class="logo">
+    <img src="boydify/LOGO.png" alt="Logo">
+  </div>
+  <ul class="sections">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about-me">About Me</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Extras.html">Extras</a></li>
+  </ul>
+  <div class="user-profile">
+    <img src="placeholder.png" alt="Profile Image">
+    <span>Guest</span>
+  </div>
+</nav>
+<body>
+    <!-- Headlining Text -->
+    <h1 class="contact-headline">Contact Me</h1>
+
+    <!-- Text and Hidden Email -->
+    <p class="contact-text">For business and/or music hiring inquiries, please fill out the form below or contact me at <span class="hidden-email" onclick="showEmail()">Unhide</span>.</p>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Message Sent Confirmation -->
+    <div id="message-sent" style="display: none;">Message Sent. Thank you, I will be in touch shortly!<br>-Noah</div>
+
+    <!-- Social Media Icons -->
+    <div class="social-media">
+        <a href="https://www.instagram.com/your-instagram-handle/" target="_blank">
+            <div class="social-media-item">
+                <img src="imagesnphotos/instagram_icon.webp" alt="Instagram">
+                <p>Instagram</p>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/your-instagram-drums-handle/" target="_blank">
+            <div class="social-media-item">
+                <img src="imagesnphotos/instagram_old_icon.png" alt="Instagram Drums">
+                <p>Instagram but Drums</p>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank">
+            <div class="social-media-item">
+                <img src="imagesnphotos/LinkedIn_icon.svg.png" alt="LinkedIn">
+                <p>LinkedIn</p>
+            </div>
+        </a>
+        <a href="https://open.spotify.com/your-spotify-profile" target="_blank">
+            <div class="social-media-item">
+                <img src="imagesnphotos/spotify_icon.png" alt="Spotify">
+                <p>Spotify</p>
+            </div>
+        </a>
+    </div>
+    <div class="nb-loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="js/contact.js"></script>
+    <script src="js/bufferloader.js"></script>
+</body>
+</html>

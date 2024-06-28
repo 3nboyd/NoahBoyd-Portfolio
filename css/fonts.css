@@ -1,0 +1,93 @@
+/* @font-face {
+    font-family: 'BoydifyFont';
+    src: url('https://encore.scdn.co/fonts/CircularSpVietnameseTitle-Variable-7658d9c8211dd8a6b350b6507f7fdd1a.woff2');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BoydifyFont';
+    src: url('boydifyfonts/BoydifyFont-Header.otf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BoydifyFont';
+    src: url('boydifyfonts/BoydifyFont-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BoydifyFont';
+    src: url('boydifyfonts/BoydifyFont-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BoydifyFont';
+    src: url('boydifyfonts/BoydifyFont-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'BoydifyFont';
+    src: url('boydifyfonts/BoydifyFont-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SpotifyFont';
+    src: url('https://encore.scdn.co/fonts/CircularSpVietnameseTitle-Variable-7658d9c8211dd8a6b350b6507f7fdd1a.woff2')
+  }
+  
+  /* Apply the font to specific elements */
+  /* h1 {
+    font-family: 'BoydifyFont', sans-serif;
+    font-weight: 900;
+  }
+  
+  .header {
+    font-family: 'BoydifyFont', sans-serif;
+    font-weight: 800; /* even bolder than bold 
+  }
+  
+  .regular {
+    font-family: 'BoydifyFont', sans-serif;
+    font-weight: normal;
+  }
+  
+  .bold {
+    font-family: 'BoydifyFont', sans-serif;
+    font-weight: bold;
+  }
+  
+  .italic {
+    font-family: 'BoydifyFont', sans-serif;
+    font-style: italic;
+  }
+  
+  .bold-italic {
+    font-family: 'BoydifyFont', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }  */
+
+  /* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}

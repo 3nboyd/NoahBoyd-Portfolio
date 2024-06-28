@@ -1,0 +1,185 @@
+:root {
+  --navbar-height: 81px; /* set the height of the navbar as a CSS variable */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: var(--navbar-height); /* Makes the site start when the navbar ends */
+}
+header {
+  background-color: #1A1A1A;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  margin: 20px;
+}
+a {
+  text-decoration: none; /* remove default underline */
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #FFFFFF; /* white underline on hover */
+  text-decoration-thickness: 1px; /* adjust thickness to your liking */
+}
+h1 {
+  text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
+}
+
+.header-subtext {
+  background-color: #1A1A1A;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.header-subtext p {
+  color: #aeaeae;
+  font-size: 24px;
+  margin: 0;
+}
+
+.section {
+  margin: 40px;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.content-box {
+  background-color: #1A1A1A;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 200px; /* Set a fixed height for the box */
+  width: 200px; /* Set a fixed width for the box */
+}
+
+.content-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.content-box.title {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.content-box.subtext {
+  color: #666;
+  font-size: 14px;
+}
+
+.content-box:hover {
+  background-color: #333;
+}
+
+.content-box:active {
+  background-color: #444;
+}
+
+.see-more-box {
+  background-color: #1A1A1A;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.see-more-box.title {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.see-more-box.subtext {
+  color: #666;
+  font-size: 14px;
+}
+
+.see-more-box:hover {
+  background-color: #333;
+}
+
+.see-more-box:active {
+  background-color: #444;
+}
+
+.gif-container {
+  position: relative;
+}
+
+.gif-container img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.gif-container.gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  display: none;
+}
+
+.gif-container:hover.gif {
+  display: block;
+}
+.upcoming-events {
+  background-color: #1A1A1A;
+  padding: 20px;
+}
+
+.event-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.event-poster {
+  margin: 10px;
+  width: 150px; /* adjust width to fit your poster images */
+}
+
+.event-poster img {
+  width: 100%;
+  height: 200px; /* adjust height to fit your poster images */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.see-all-events {
+  margin: 10px;
+  width: 150px; /* adjust width to fit your See All Events box */
+  background-color: #1A1A1A;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.see-all-events img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.see-all-events p {
+  color: #FFFFFF;
+  text-align: center;
+}
