@@ -50,13 +50,17 @@ $(document).ready(function() {
 ];
 
 $.each(contentBoxes, function(index, contentBox) {
-  let contentHTML = `<a href="${contentBox.url}" target="_blank">
-    <div class="content-box">
-      <img src="${contentBox.image}" alt="${contentBox.title}">
-      <p style="color: #FFFFFF;">${contentBox.title}</p>
-      <p style="color: #F7F7F7;">${contentBox.date} · ${contentBox.type}</p>
-    </div>
-  </a>`;
+  let contentHTML = `
+    <a href="${contentBox.url}" target="_blank">
+      <div class="content-box">
+        <img src="${contentBox.image}" alt="${contentBox.title}">
+        <div class="content-text">
+          <p>${contentBox.title}</p>
+          <p>${contentBox.date} · ${contentBox.type}</p>
+        </div>
+      </div>
+    </a>
+  `;
   $(".content-grid").append(contentHTML);
 });
 });
@@ -81,11 +85,6 @@ let upcomingEvents = [
     image: "js/posters/BOAGrandNats2024.png",
     url: "https://marching.musicforall.org/wp-content/uploads/sites/5/2023/12/1920x1080_BOA24-WHITE-LIGHTNING-1280x640.png"
   },
-  {
-    image: "js/content/tempseemore.png",
-    title: "See All Events",
-    url: "events.html"
-  }
 ];
 
 $.each(upcomingEvents, function(index, event) {
@@ -103,4 +102,30 @@ $.each(upcomingEvents, function(index, event) {
     </a>`;
   }
   $(".event-grid").append(eventHTML);
+});
+
+// Add event listener to the "Show All" button
+
+const showAllButtons = document.querySelectorAll('.show-all button');
+const contentGrids = document.querySelectorAll('.content-grid,.event-grid');
+
+showAllButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const contentGrid = contentGrids[index];
+    const contentBoxes = contentGrid.children;
+
+    // Toggle the visibility of extra content
+    Array.prototype.forEach.call(contentBoxes, (box, index) => {
+      if (index >= 3) {
+        box.classList.toggle('show-all-content');
+      }
+    });
+
+    // Update the button text
+    if (button.textContent === 'Show All') {
+      button.textContent = 'Hide';
+    } else {
+      button.textContent = 'Show All';
+    }
+  });
 });

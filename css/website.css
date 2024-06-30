@@ -1,0 +1,57 @@
+body {
+    font-weight: 600;
+    color: #ffffff; /* White text color */
+    background-color: #1a1a1a; /* Dark background color */
+    margin-top: var(--navbar-height); 
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.left-column {
+    width: 700px;
+    margin-right: 20px;
+}
+
+.right-column {
+    width: 700px;
+}
+
+section {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h1 {
+    text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb;
+}
+h2 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.left-column section {
+    height: 100%; /* Make the left column section take up the full height */
+}
+
+.right-column section {
+    height: 45%; /* Make the right column sections take up 45% of the height */
+    margin-bottom: 10px; /* Add some space between the sections */
+}
+
+.readme {
+    height: 100%;
+}
+
+.credits {
+    height: 66.67%;
+}
+
+.legacy {
+    height: 33.33%;
+}

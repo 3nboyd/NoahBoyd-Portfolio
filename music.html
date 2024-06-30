@@ -6,13 +6,10 @@
     <title>Music</title>
     <link rel="stylesheet" href="css/music.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/music.js"></script>
     <link rel="stylesheet" href="css/bufferloader.css">
     <link rel="stylesheet" href="css/navbar.css">
 </head>
 <nav class="navbar">
-  <script src="js/navbar.js"></script>
   <div class="logo">
     <img src="boydify/LOGO.png" alt="Logo">
   </div>
@@ -29,25 +26,37 @@
     <span>Guest</span>
   </div>
 </nav>
-<body style="background-color: #121212;">
+<body>
     <header>
         <h1 style="color: #FFFFFF; font-size: 96px;">Music</h1>
         <div class="header-subtext">
             <p style="color: #a3a3a3;">>This is where I say something cool<</p>
         </div>
     </header>
-    <section class="section">
-        <h2 style="color: #FFFFFF;">Social Media</h2>
-        <div class="content-grid">
-            <!-- Content boxes will be generated dynamically using JavaScript -->
-        </div>
-    </section>
-    <section class="upcoming-events">
-      <h2 style="color: #FFFFFF;">Upcoming Events</h2>
-      <div class="event-grid">
-        <!-- dynamically generated content will go here -->
-      </div>
-    </section>
+  <!-- Content Grid Section -->
+<section class="section">
+  <h2>Social Media</h2>
+  <span class="show-all">
+    <button>Show All</button>
+  </span>
+  <div class="content-grid">
+    <!-- Content boxes will be generated dynamically here -->
+  </div>
+</section>
+
+<!-- Upcoming Events Section -->
+<section class="upcoming-events">
+  <h2>Upcoming Events</h2>
+  <span class="show-all">
+    <button>Show All</button>
+  </span>
+  <div class="event-grid">
+    <!-- Event posters will be generated dynamically here -->
+  </div>
+</section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/music.js"></script>
     <script src="js/bufferloader.js"></script>
 </body>
 </html>

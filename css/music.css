@@ -3,16 +3,34 @@
 }
 
 body {
+  background-color: #121212;
   margin: 0;
   padding: 0;
-  margin-top: var(--navbar-height); /* Makes the site start when the navbar ends */
+  margin-top: var(--navbar-height); 
+
 }
 header {
+  display: flex;
+  align-items: center;
   background-color: #1A1A1A;
   padding: 20px;
   text-align: left;
   border-radius: 10px;
   margin: 20px;
+}
+
+.header-subtext {
+  background-color: #1A1A1A;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.header-subtext p {
+  color: #a3a3a3;
+  font-size: 24px;
+  margin: 0;
 }
 a {
   text-decoration: none; /* remove default underline */
@@ -25,43 +43,44 @@ a:hover {
 }
 h1 {
   text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
+  color: #FFFFFF;
+  font-size: 96px;
 }
-
-.header-subtext {
-  background-color: #1A1A1A;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 20px;
+h2 {
+  color: white;
+  font-size: 36px;
 }
-
-.header-subtext p {
-  color: #aeaeae;
-  font-size: 24px;
-  margin: 0;
-}
-
 .section {
-  margin: 40px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .section h2 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: white;
+  text-align: left;
 }
 
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .content-box {
-  background-color: #1A1A1A;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
-  cursor: pointer;
-  height: 200px; /* Set a fixed height for the box */
-  width: 200px; /* Set a fixed width for the box */
+  color: #fff;
+  overflow: hidden; /* Add this to prevent image overflow */
+  transition: transform 0.3s ease-in-out; /* Add this for hover effect */
+}
+
+.content-box:hover {
+  transform: scale(1.05); /* Add this for hover effect */
 }
 
 .content-box img {
@@ -70,18 +89,11 @@ h1 {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-
 .content-box.title {
   color: #FFFFFF;
   font-size: 18px;
   margin-bottom: 10px;
 }
-
-.content-box.subtext {
-  color: #666;
-  font-size: 14px;
-}
-
 .content-box:hover {
   background-color: #333;
 }
@@ -142,7 +154,6 @@ h1 {
   display: block;
 }
 .upcoming-events {
-  background-color: #1A1A1A;
   padding: 20px;
 }
 
@@ -150,36 +161,86 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
+
 .event-poster {
+  width: 250px;
+  height: 300px;
   margin: 10px;
-  width: 150px; /* adjust width to fit your poster images */
-}
-
-.event-poster img {
-  width: 100%;
-  height: 200px; /* adjust height to fit your poster images */
-  object-fit: cover;
+  overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
 }
 
-.see-all-events {
-  margin: 10px;
-  width: 150px; /* adjust width to fit your See All Events box */
-  background-color: #1A1A1A;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
+.event-poster:hover{
+  transform: scale(1.05);
 }
 
-.see-all-events img {
+.event-poster img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+}
+
+
+.see-all-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.see-all-events:hover {
+  background-color: #333;
+}
+
+.see-all-events img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .see-all-events p {
-  color: #FFFFFF;
-  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+.section,.upcoming-events {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+.show-all {
+  margin-bottom: 20px;
+  margin-left: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.show-all button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.show-all button:hover {
+  background-color: #444;
+}
+/* Add a class to toggle the visibility of extra content */
+.show-all-content {
+  display: block;
+}
+/* Hide the extra content by default */
+.content-box:not(:nth-child(-n+3)),.event-box:not(:nth-child(-n+3)) {
+  display: none;
 }
