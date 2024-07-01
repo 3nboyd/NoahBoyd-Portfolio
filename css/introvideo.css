@@ -22,7 +22,7 @@
   }
   
   .background-image.animate {
-    animation: bannerAnimation 1.3s ease-out;
+    animation: bannerAnimation 2.2s ease-out;
     animation-delay: 1.5s;
     animation-fill-mode: forwards; /* Add this property */
   }

@@ -36,7 +36,7 @@ section {
     margin-bottom: 20px;
 }
 h1 {
-    text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb;
+    text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
 }
 h2 {
     font-size: 24px;

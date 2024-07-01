@@ -16,7 +16,7 @@ body {
     text-align: left;
     margin-left: 325px;
     padding: 20px;
-    text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
+    text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
 }
 
 .projects {
@@ -84,7 +84,7 @@ body {
     color: #ffffff; /* White text color */
     text-align: center;
     padding: 20px;
-    text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
+    text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
 }
 
 .coding-skills {
@@ -108,7 +108,7 @@ body {
     color: #ffffff; /* White text color */
     text-align: center;
     padding: 20px;
-    text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
+    text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
 }
 
 .coding-skills ul {
