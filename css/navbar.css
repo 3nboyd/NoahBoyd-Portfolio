@@ -1,91 +1,91 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    z-index: 1000; /* to ensure it stays on top */
-  }
-  
-  .logo {
-    margin-right: 20px;
-  }
-  
-  .logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .logo img:hover {
-    background-image: linear-gradient(to right, #ff69b4, #ff69b4, #ff69b4, #ff69b4, #ff69b4);
-    background-size: 100% 100%;
-    background-position: 0% 100%;
-    transition: background-position 0.3s ease-in-out;
-  }
-  
-  .sections {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-  }
-  
-  .sections li {
-    margin-right: 30px; /* increased spacing */
-  }
-  
-  .sections li:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -15px;
-    transform: translateY(-50%) rotate(10deg);
-    border-right: 1px solid #fff;
-    height: 20px;
-  }
-  
-  .sections a {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(26, 26, 26, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  z-index: 99; /* to ensure it stays on top */
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+.menu {
+  margin: 0 auto;
+  margin-left: 40px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu > li {
+  background: #242424;
+  position: relative;
+  transform: skewX(-25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu li:hover {
+  background: #520a85;
+}
+
+.menu > li > a {
+  transform: skewX(+25deg);
+  padding: 1em 2em;
+}
+  .menu > li.active > a {
+    background-color: #520a85; /* same as hover color */
     color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
+    transform: skewX(0deg); /* add this to maintain the skew effect */
+    padding: 1em 2em; /* add this to maintain the padding */
   }
   
-  .sections a:hover {
-    background-color: rgba(255, 105, 180, 0.8);
-    background-image: linear-gradient(to bottom, rgba(255, 105, 180, 0.8), rgba(255, 105, 180, 0.8));
-    padding: 10px 0;
-    border-radius: 0;
-    transition: background-color 0.3s ease-in-out;
+  .menu > li.active > a span {
+    transform: skewX(+25deg); /* reset skew for text */
+    display: inline-block; /* to apply transform */
   }
-  
-  .sections a.active {
-    background-color: rgba(255, 105, 180, 0.8);
-    background-image: linear-gradient(to bottom, rgba(255, 105, 180, 0.8), rgba(255, 105, 180, 0.8));
-    padding: 10px 0;
-    border-radius: 0;
-  }
-  
-  .user-profile {
-    background-color: #1a1a1a; /* darker gray */
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-profile img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .user-profile span {
-    color: #fff;
-  }
+
+.user-profile {
+  background-color: #000000; /* darker gray */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-profile span {
+  color: #fff;
+}

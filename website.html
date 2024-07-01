@@ -6,10 +6,31 @@
     <title>About This Website</title>
     <link rel="stylesheet" href="css/website.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+<nav class="navbar">
+    <div class="logo">
+      <img src="boydify/LOGO.png" alt="Logo">
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about-me">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="active"><a href="website.html">Website</a></li>
+    </ul>
+    <div class="user-profile">
+      <img src="boydify/tempguest.png" alt="Profile Image">
+      <span>Guest</span>
+    </div>
+  </nav>
 <body>
-    <h1 class="headline">About This Website</h1>
+    <header>
+        <h1 style="color: #FFFFFF; font-size: 96px;">About This Website</h1>
+        </div>
+    </header>
     <div class="container">
         <div class="left-column">
             <section class="readme">
@@ -31,5 +52,11 @@
             </section>
         </div>
     </div>
+    <div class="nb-loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="js/projects.js"></script>
+    <script src="js/bufferloader.js"></script>
+    <link rel="stylesheet" href="css/bufferloader.css">
 </body>
 </html>

@@ -1,7 +1,6 @@
 :root {
   --navbar-height: 81px; /* set the height of the navbar as a CSS variable */
 }
-
 body {
   background-color: #121212;
   margin: 0;
