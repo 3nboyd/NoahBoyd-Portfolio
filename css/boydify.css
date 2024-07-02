@@ -66,7 +66,6 @@ h1 {
     margin-top: 0px;
     padding: 20px;
 }
-
 .latest-content-row {
     padding: 15px;
     background-color: #333; /* slightly grayer box than background */
@@ -129,6 +128,16 @@ h1 {
     background-color: #444; /* lighter gray on hover */
     cursor: pointer;
 }
+.neon {
+    transform: scale(2);
+    margin: 0 40px 0 20px;
+    text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
+    transition: filter .05s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .popular-row:hover .neon {
+    text-shadow: 0 0 10px #ff73fd, 0 0 20px #e537e8, 0 0 30px #b521e2, 0 0 40px #8807c4, 0 0 50px #5a0faa, 0 0 60px #3d006c, 0 0 70px #21003a5c, 0 0 100px #22003b; /* Purple neon glow effect */
+    filter: brightness(1.8);
+  }
 .popular-row a {
     text-decoration: none !important;
     color: inherit !important;
