@@ -6,16 +6,23 @@
 body {
     font-weight: 600;
     color: #ffffff;
-    background-color: #1a1a1a; /* Dark background color */;
+    background-color: #121212; /* Dark background color */;
     margin-top: var(--navbar-height); 
 }
-.contact-headline {
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1A1A1A;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    margin: 20px;
     font-size: 48px;
     text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
-}
+  }
 
 .contact-text {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .hidden-email {
@@ -24,33 +31,6 @@ body {
 
 .hidden-email:hover {
     text-decoration: underline;
-}
-
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#contact-form input, #contact-form textarea {
-    width: 50%;
-    padding: 10px;
-    margin: 10
-}
-
-#contact-form button[type="submit"] {
-    width: 50%;
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-#contact-form button[type="submit"]:hover {
-    background-color: #3e8e41;
 }
 
 #message-sent {
@@ -92,8 +72,20 @@ body {
 .social-media a:hover {
     text-decoration: underline;
 }
-/*The following is code that is taken from Formspree, which is only copied because
- in order for the program to work, it must incorporate Formspree's own code to send to the server*/
+.hidden-email-btn {
+    background-color: #7a28cb; /* same purple color as the navbar */
+    color: #ffffff; /* white text color */
+    padding: 10px; /* add some padding to the button */
+    border: none; /* remove the border */
+    border-radius: 5px; /* add some rounded corners */
+    cursor: pointer; /* change the cursor to a pointer on hover */
+  }
+  
+  .hidden-email-btn:hover {
+    background-color: #5a1d8e; /* darker purple color on hover */
+  }
+/*Some of the following is code that is taken from Formspree, the server I used to make the contact
+form functional, as they must incorporate their own code to send to the server*/
  #fs-frm input,
  #fs-frm select,
  #fs-frm textarea,
@@ -182,21 +174,44 @@ body {
    -moz-appearance: radio;
    appearance: radio;
  }
- 
- /* address, locale */
- #fs-frm fieldset.locale input[name="city"],
- #fs-frm fieldset.locale select[name="state"],
- #fs-frm fieldset.locale input[name="postal-code"] {
-   display: inline;
- }
- #fs-frm fieldset.locale input[name="city"] {
-   width: 52%;
- }
- #fs-frm fieldset.locale select[name="state"],
- #fs-frm fieldset.locale input[name="postal-code"] {
-   width: 20%;
- }
- #fs-frm fieldset.locale input[name="city"],
- #fs-frm fieldset.locale select[name="state"] {
-   margin-right: 3%;
- }
+ #fs-frm-inputs input, #fs-frm-inputs textarea {
+    color: #000; /* or any other dark color you prefer */
+  }
+  
+  #fs-frm-inputs input::placeholder, #fs-frm-inputs textarea::placeholder {
+    color: #666; /* or any other gray color you prefer */
+  }
+  #fs-frm-inputs, {
+    max-width: 800px;
+    margin: 0 auto; /* centers the form */
+    padding: 20px;
+  }
+  
+  #fs-frm-inputs input, #fs-frm-inputs textarea {
+    width: 100%; /* make the input fields take up the full width of the form */
+    padding: 10px; /* add some padding to the input fields */
+    margin-bottom: 20px; /* add some margin between the input fields */
+  }
+  
+  #fs-frm-inputs label {
+    display: block; /* make the labels display as blocks */
+    margin-bottom: 10px; /* add some margin between the labels and input fields */
+  }
+  
+  #fs-frm input[type="submit"] {
+    width: 100%; /* make the submit button take up the full width of the form */
+    background-color: #7a28cb; /* same purple color as the navbar */
+    color: #ffffff; /* white text color */
+    padding: 10px; /* add some padding to the submit button */
+    border: none; /* remove the border */
+    border-radius: 5px; /* add some rounded corners */
+    cursor: pointer; /* change the cursor to a pointer on hover */
+  }
+  
+  #fs-frm input[type="submit"]:hover {
+    background-color: #5a1d8e; /* darker purple color on hover */
+  }
+  #fs-frm {
+    max-width: 800px;
+    margin: 0 auto;
+  }

@@ -29,11 +29,14 @@
     </div>
   </nav>
 <body>
-    <!-- Headlining Text -->
-    <h1 class="contact-headline">Contact Me</h1>
+    <header>
+        <h1 style="color: #FFFFFF; font-size: 96px;">Contact</h1>
+        </div>
+    </header>
 
     <!-- Text and Hidden Email -->
-    <p class="contact-text">For business and/or music hiring inquiries, please fill out the form below or contact me at <span class="hidden-email" onclick="showEmail()">Unhide</span>.</p>
+    <p class="contact-text">For business inquiries, please fill out the form below or contact me at <button class="hidden-email-btn" onclick="showEmail()">Unhide</button><span id="email-address-display"></span>.</p>
+
     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myzgykqo" method="post">
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Full Name</label>
@@ -45,10 +48,7 @@
           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
         </fieldset>
         <input type="submit" value="Submit">
-
-    <!-- Message Sent Confirmation -->
-    <div id="message-sent" style="display: none;">Message Sent. Thank you, I will be in touch shortly!<br>-Noah</div>
-
+        </form>
     <!-- Social Media Icons -->
     <div class="social-media">
         <a href="https://www.instagram.com/your-instagram-handle/" target="_blank">

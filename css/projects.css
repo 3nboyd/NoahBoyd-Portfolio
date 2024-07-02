@@ -5,7 +5,7 @@
 body {
     font-weight: 600;
     color: #ffffff; /* White text color */
-    background-color: #1a1a1a; /* Dark background color */
+    background-color: #181818; /* Dark background color */
     margin-top: var(--navbar-height); 
 }
 

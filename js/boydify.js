@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     // If it's not the first visit or the user is not at the top of the page, skip the animation
     videoContainer.classList.add("minimized");
+    video.currentTime = 3.5;
   }
 
   // Add the minimized class after the animation ends (if animation was triggered)
