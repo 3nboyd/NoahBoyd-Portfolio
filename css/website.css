@@ -1,8 +1,7 @@
 body {
     font-weight: 600;
     color: #ffffff; /* White text color */
-    background-color: #191515; /* Dark background color */
-    margin-top: var(--navbar-height); 
+    background-color: #191515; /* Dark background color */ 
 }
 header {
     display: flex;

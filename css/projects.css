@@ -22,11 +22,9 @@ body {
 .projects {
     width: 60%; /* adjust the width of the projects section */
     float: left; /* make the projects section float to the left */
-}
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project-box {

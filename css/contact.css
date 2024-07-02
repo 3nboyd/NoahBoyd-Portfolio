@@ -1,13 +1,7 @@
-/* contact.css */
-:root {
-    --navbar-height: 81px; /* set the height of the navbar as a CSS variable */
-  }
-
 body {
     font-weight: 600;
     color: #ffffff;
     background-color: #121212; /* Dark background color */;
-    margin-top: var(--navbar-height); 
 }
 header {
     display: flex;
