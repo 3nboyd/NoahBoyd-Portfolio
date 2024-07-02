@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  z-index: 99; /* to ensure it stays on top */
+  z-index: 98; /* to ensure it stays on top */
 }
 
 .logo {
