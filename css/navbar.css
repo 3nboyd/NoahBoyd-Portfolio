@@ -58,20 +58,20 @@
   transform: skewX(+25deg);
   padding: 1em 2em;
 }
-  .menu > li.active > a {
-    background-color: #520a85; /* same as hover color */
-    color: #fff;
-    transform: skewX(0deg); /* add this to maintain the skew effect */
-    padding: 1em 2em; /* add this to maintain the padding */
-  }
+.menu > li.active {
+  background-color: #520a85; /* same as hover color */
+  color: #fff;
+  transform: skewX(-25deg); /* skew 25 deg left */
+}
   
   .menu > li.active > a span {
-    transform: skewX(+25deg); /* reset skew for text */
+    transform: skewX(+25deg) !important; /* reset skew for text */
     display: inline-block; /* to apply transform */
   }
 
 .user-profile {
-  background-color: #000000; /* darker gray */
+  background-color: #131313; /* darker gray */
+  width: 115px;
   padding: 10px;
   border-radius: 10px;
   display: flex;
@@ -88,4 +88,5 @@
 
 .user-profile span {
   color: #fff;
+  margin-left: 10px;
 }

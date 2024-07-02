@@ -9,4 +9,11 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 750;
   font-style: normal;
+  z-index: 2;
+}
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }

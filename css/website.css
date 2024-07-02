@@ -1,16 +1,36 @@
+:root {
+    --navbar-height: 70px;
+  }
 body {
     font-weight: 600;
     color: #ffffff; /* White text color */
     background-color: #191515; /* Dark background color */ 
+    margin-top: calc(var(--navbar-height)); 
 }
-header {
+  header {
     display: flex;
     align-items: center;
-    background-color: #1A1A1A;
+    background-image: url('headerimages/bannerwebsite.png');
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     text-align: left;
     border-radius: 10px;
     margin: 20px;
+    margin-bottom: 0px;
+    position: relative; /* add this to create a stacking context */
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191515; /* your original background color */
+    opacity: 0.5; /* adjust the opacity to your liking */
+    border-radius: 10px;
   }
 .container {
     display: flex;
@@ -38,10 +58,13 @@ h1 {
     text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
 }
 h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: #ffffff;
     text-align: center;
     padding: 20px;
+}
+p {
+    font-size: 20px;
 }
 .left-column section {
     height: 100%; /* Make the left column section take up the full height */

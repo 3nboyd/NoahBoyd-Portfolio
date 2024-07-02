@@ -1,33 +1,36 @@
-
+:root {
+  --navbar-height: 70px;
+}
 body {
   background-color: #191515;
   margin: 0;
   padding: 0;
+  margin-top: calc(var(--navbar-height)); 
 }
 header {
   display: flex;
   align-items: center;
-  background-color: #1A1A1A;
+  background-image: url('headerimages/bannermusic.JPG'); /* add your image here */
+  background-size: cover;
+  background-position: center;
   padding: 20px;
   text-align: left;
   border-radius: 10px;
   margin: 20px;
   margin-bottom: 0px;
+  position: relative; /* add this to create a stacking context */
 }
 
-.header-subtext {
-  background-color: #1A1A1A;
-  padding: 10px;
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191515; /* your original background color */
+  opacity: 0.5; /* adjust the opacity to your liking */
   border-radius: 10px;
-  margin-left: 20px;
-  display: inline-block;
-}
-
-.header-subtext p {
-  color: #a3a3a3;
-  font-size: 24px;
-  margin: 0;
-  margin-left: 70px;
 }
 a {
   text-decoration: none; /* remove default underline */
@@ -96,7 +99,7 @@ h2 {
   margin-bottom: 10px;
 }
 .content-box:hover {
-  background-color: #333;
+  background-color: #222;
 }
 
 .content-box:active {
@@ -122,7 +125,7 @@ h2 {
 }
 
 .see-more-box:hover {
-  background-color: #333;
+  background-color: #222;
 }
 
 .see-more-box:active {
@@ -172,7 +175,7 @@ h2 {
 }
 
 .see-all-events:hover {
-  background-color: #333;
+  background-color: #222;
 }
 
 .see-all-events img {
@@ -274,7 +277,6 @@ h2 {
   height: 40px; /* set a fixed height for the icon */
   margin-left: 10px;
 }
-
 .music-box:hover h3 {
   text-decoration: underline;
   text-underline-offset: 1px; /* add 1px underline */
@@ -288,5 +290,5 @@ h2 {
 }
 
 .music-box:hover {
-  background-color: #333; /* change background color on hover */
+  background-color: #222; /* change background color on hover */
 }
