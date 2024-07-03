@@ -1,0 +1,72 @@
+/* progress.css */
+
+:root {
+    --primary-color: #191515; /* Dark background color */
+    --secondary-color: #7a28cb; /* Purple neon glow color */
+    --text-color: #ffffff; /* White text color */
+    --navbar-height: 81px; /* Navbar height */
+  }
+  
+  body {
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    margin-top: var(--navbar-height);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+    text-decoration-thickness:1px;
+    color: #fff;
+}
+  
+  .progress {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .progress p {
+    color: var(--text-color);
+    font-size: 28px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    line-height: 140%;
+  }
+  
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-grid img {
+    width: 400px;
+
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+    color: #fff;
+}
+  

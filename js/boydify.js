@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // This part checks if the user is at the top of the page and if it's the first visit
   if (window.scrollY === 0 && isFirstVisit) {
-    // Play the video
+    // Plays the video on first visit
     video.play();
 
     // Add the animate class
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   } else {
     // If it's not the first visit or the user is not at the top of the page, it should skip the animation
     videoContainer.classList.add("minimized");
-    video.currentTime = 3.5;
+    video.currentTime = 3.5;//skips to the end of the video, change this if video length is changed
   }
 
   // Adds the minimized class after the animation ends (if animation was triggered)
