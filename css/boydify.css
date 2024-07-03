@@ -2,40 +2,40 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #191515; /* dark grey background */
+    background-color: #191515; /* use this for every page*/
     color: white
 }
 html {
     scroll-behavior: smooth;}
 a {
-    text-decoration: none; /* remove default underline */
+    text-decoration: none; 
     color: white;
   }
 
 .header {
     position: absolute;
     top: 50%;
-    left: 30px; /* aligned text to left side of screen */
-    transform: translateY(-50%);
+    left: 30px; 
+    transform: translateY(-50%); /*translate functions are bad when dealing with different screen sizes but it is okay because it works :). In future change these to make it better for phone displays*/
     text-align: left;
-    color: #fff; /* white font color */
+    color: #fff;
     z-index: 40;
 }
 .verified-artist {
     font-size: 20px;
-    margin-bottom: 5px; /* reduced margin between rows */
-    transform: translateY(+180%);
+    margin-bottom: 5px; 
+    transform: translateY(+180%); /*"^^^"*/
 }
 .verified-artist img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    vertical-align: middle; /* centered image with text */
+    vertical-align: middle; 
 }
 h1 {
     font-size: 96px;
     margin-bottom: 10px; /* reduced margin between rows */
-    color: #fff; /* white font color */
+    color: #fff; 
     text-shadow: 0 0 10px #7a28cb, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
 }
 .subtitle {
@@ -51,7 +51,7 @@ h1 {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, #191515 100%);
-    background-size: 100% 270px;
+    background-size: 100% 270px; /*use this to change opacity etc not the gradient itself*/
     background-position: 0% 0%;
     transform: translateY(0);
     background-repeat: no-repeat;
@@ -68,13 +68,13 @@ h1 {
 }
 .latest-content-row {
     padding: 15px;
-    background-color: #333; /* slightly grayer box than background */
+    background-color: #333; /* slightly grayer box than background, use for all */
     border-radius: 5px;
     cursor: pointer;
 }
 
 .latest-content-row:hover {
-    background-color: #555; /* lighter gray on hover */
+    background-color: #555;
 }
 
 .latest-content-row img {
@@ -87,18 +87,18 @@ h1 {
 .latest-content-row .title {
     font-size: 18px;
     font-weight: bold;
-    color: #fff; /* white font color */
+    color: #fff;
 }
 
 .latest-content-row .subtext {
     font-size: 14px;
-    color: #fff; /* white font color */
+    color: #fff; 
 }
-
-.latest-content-row .date {
+.latest-content-row .date { /*this isnt actually a date it just used to be one*/
     font-size: 14px;
-    color: #fff; /* white font color */
+    color: #fff; 
     float: right;
+    margin-top: -50px;
 }
 .popular {
     position: relative;
@@ -112,7 +112,7 @@ h1 {
     font-size: 40px !important;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #fff; /* white font color */
+    color: #fff;
 }
 
 .popular-row {
@@ -123,9 +123,8 @@ h1 {
     padding: 15px;
     transition: background-color 0.09s ease-in-out;
 }
-
 .popular-row:hover {
-    background-color: #444; /* lighter gray on hover */
+    background-color: #444; 
     cursor: pointer;
 }
 .neon {
@@ -135,7 +134,7 @@ h1 {
     transition: filter .05s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .popular-row:hover .neon {
-    text-shadow: 0 0 10px #ff73fd, 0 0 20px #e537e8, 0 0 30px #b521e2, 0 0 40px #8807c4, 0 0 50px #5a0faa, 0 0 60px #3d006c, 0 0 70px #21003a5c, 0 0 100px #22003b; /* Purple neon glow effect */
+    text-shadow: 0 0 10px #ff73fd, 0 0 20px #e537e8, 0 0 30px #b521e2, 0 0 40px #8807c4, 0 0 50px #5a0faa, 0 0 60px #3d006c, 0 0 70px #21003a5c, 0 0 100px #22003b; /* This is from my old neon design, R.I.P. */
     filter: brightness(1.8);
   }
 .popular-row a {
@@ -157,18 +156,18 @@ h1 {
 .popular-row .title {
     font-size: 18px;
     font-weight: bold;
-    color: #fff; /* white font color */
+    color: #fff; 
 }
 
 .popular-row .placeholder {
     font-size: 14px;
-    color: #fff; /* white font color */
+    color: #fff; 
     float: right;
 }
 
 .popular-row .number {
     font-size: 14px;
-    color: #fff; /* white font color */
+    color: #fff; 
     margin-right: 10px;
 }
 
@@ -201,18 +200,18 @@ h1 {
   }
   
   .intro-text {
-    font-size: 36px !important; /* increased font size to 36px */
-    font-weight: bold; /* added bold font weight for better readability */
+    font-size: 36px !important; 
+    font-weight: bold; /* makes it more readable */
   }
   
   .subsection-header {
-    font-size: 52px !important; /* increased font size to 48px */
+    font-size: 52px !important; 
 
   }
   
   .subsection-text {
-    font-size: 24px !important; /* increased font size to 24px */
-    line-height: 1.5 !important; /* added line height for better readability */
+    font-size: 24px !important; 
+    line-height: 1.5 !important; /* more readable */
   }
   .bottomnav {
     font-size: 36px;
@@ -223,5 +222,5 @@ h1 {
   .bottomnav a:hover {
     text-decoration: underline;
     text-decoration-color: #FFFFFF; /* white underline on hover */
-    text-decoration-thickness: 2px; /* adjust thickness to your liking */
+    text-decoration-thickness: 2px; 
   }

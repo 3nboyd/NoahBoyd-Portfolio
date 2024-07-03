@@ -10,7 +10,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  background-image: url('headerimages/bannermusic.JPG'); /* add your image here */
+  background-image: url('headerimages/bannermusic.JPG'); 
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -18,7 +18,7 @@ header {
   border-radius: 10px;
   margin: 20px;
   margin-bottom: 0px;
-  position: relative; /* add this to create a stacking context */
+  position: relative; 
 }
 
 header::before {
@@ -28,18 +28,18 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #191515; /* your original background color */
-  opacity: 0.5; /* adjust the opacity to your liking */
+  background-color: #191515; 
+  opacity: 0.5; 
   border-radius: 10px;
 }
 a {
-  text-decoration: none; /* remove default underline */
+  text-decoration: none; 
 }
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: #FFFFFF; /* white underline on hover */
-  text-decoration-thickness: 1px; /* adjust thickness to your liking */
+  text-decoration-color: #FFFFFF; 
+  text-decoration-thickness: 1px; 
 }
 h1 {
   text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
@@ -52,9 +52,9 @@ h2 {
 }
 .section h2, .upcoming-events h2 {
   position: relative;
-  top: 65px; /* adjust the value to move the h2 down */
+  top: 65px; /* moves the h2 down more */
   display: inline-block;
-  margin-right: 10px; /* add some space between h2 and button */
+  margin-right: 10px; /* adds some space between h2 and button */
 }
 .section {
   display: flex;
@@ -73,12 +73,12 @@ h2 {
   padding: 20px;
   border-radius: 10px;
   color: #fff;
-  overflow: hidden; /* Add this to prevent image overflow */
-  transition: transform 0.3s ease-in-out; /* Add this for hover effect */
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; /* helps with hover effect */
 }
 
 .content-box:hover {
-  transform: scale(1.05); /* Add this for hover effect */
+  transform: scale(1.05); 
 }
 
 .content-box img {
@@ -88,8 +88,8 @@ h2 {
   border-radius: 10px 10px 0 0;
 }
 .content-box img, .gif-container img {
-  width: 231px; /* adjust the width to your desired value */
-  height: 200px; /* adjust the height to your desired value */
+  width: 231px; 
+  height: 200px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -213,7 +213,7 @@ h2 {
 .show-all button:hover {
   background-color: #444;
 }
-/* Add a class to toggle the visibility of extra content */
+/* IMPORTANT: I have not added the show all feature comletely as I was not comletely done, but below class is for that and some of the js also is an attempted aspect of the show all button, don't delete yet */
 .show-all-content {
   display: block;
 }
@@ -239,13 +239,13 @@ h2 {
 }
 
 .music-box {
-  width: 265px; /* set a fixed width */
+  width: 265px; 
   margin: 20px;
   border: none;
   outline: none;
   text-decoration: none;
   color: #fff;
-  transition: background-color 0.3s ease; /* add transition effect */
+  transition: background-color 0.3s ease; /* transition effect */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -258,7 +258,7 @@ h2 {
 }
 .music-box img {
   width: 100%;
-  height: 150px; /* set a fixed height */
+  height: 150px; 
   object-fit: cover;
   border-radius: 4px 4px 4px 4px;
 }
@@ -273,14 +273,14 @@ h2 {
 }
 
 .music-box h3 img {
-  width: 40px; /* set a fixed width for the icon */
-  height: 40px; /* set a fixed height for the icon */
+  width: 40px; 
+  height: 40px; 
   margin-left: 10px;
 }
 .music-box:hover h3 {
   text-decoration: underline;
-  text-underline-offset: 1px; /* add 1px underline */
-  text-decoration-thickness: 1px; /* add 1px underline */
+  text-underline-offset: 1px; 
+  text-decoration-thickness: 1px; 
 }
 
 .music-box p {
@@ -290,5 +290,5 @@ h2 {
 }
 
 .music-box:hover {
-  background-color: #222; /* change background color on hover */
+  background-color: #222;
 }

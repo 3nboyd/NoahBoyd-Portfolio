@@ -1,11 +1,11 @@
 /* projects.css */
 :root {
-    --navbar-height: 81px; /* set the height of the navbar as a CSS variable */
+    --navbar-height: 81px; 
   }
 body {
     font-weight: 600;
     color: #ffffff; /* White text color */
-    background-color: #191515; /* Dark background color */
+    background-color: #191515; 
     margin-top: var(--navbar-height); 
 }
 header {
@@ -19,7 +19,7 @@ header {
   border-radius: 10px;
   margin: 20px;
   margin-bottom: 0px;
-  position: relative; /* add this to create a stacking context */
+  position: relative;
 }
 
 header::before {
@@ -29,8 +29,8 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #191515; /* your original background color */
-  opacity: 0.5; /* adjust the opacity to your liking */
+  background-color: #191515; 
+  opacity: 0.5; 
   border-radius: 10px;
 }
 h1 {
@@ -38,32 +38,32 @@ h1 {
 }
 
 .projects {
-    width: 60%; /* adjust the width of the projects section */
-    float: left; /* make the projects section float to the left */
+    width: 60%; 
+    float: left; 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .project-box {
-  width: 40%; /* adjust the width to fit your needs */
+  width: 40%; 
   margin: 20px;
   background-color: #191515; /* same color as the background */
   border: none;
   outline: none;
   text-decoration: none;
   color: #fff;
-  transition: background-color 0.3s ease; /* add transition effect */
+  transition: background-color 0.3s ease; /* adds the transition effect */
   border-radius: 10px
 }
 
 .project-box:hover {
-  background-color: #333; /* change background color on hover */
+  background-color: #333; 
 }
 
 .project-box img {
   width: 100%;
-  height: 250px; /* adjust the height to fit your needs */
+  height: 250px; 
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -81,8 +81,8 @@ h1 {
 
 .project-box:hover .project-info h2 {
   text-decoration: underline;
-  text-underline-offset: 2px; /* add 1px underline */
-  text-decoration-thickness: 2px; /* add 1px underline */
+  text-underline-offset: 2px; 
+  text-decoration-thickness: 2px; 
 }
 
 .project-info p {
@@ -97,7 +97,7 @@ h1 {
 
 .project h2 {
     font-size: 24px;
-    color: #ffffff; /* White text color */
+    color: #ffffff; 
     text-align: center;
     padding: 20px;
     text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
@@ -113,15 +113,15 @@ h1 {
     width: 300px;
     height: 1000x;             
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 30%; /* adjust the width of the skills section */
-    float: right; /* make the skills section float to the right */
-    margin-left: 20px; /* add some margin to the left of the skills section */
-    display: flex; /* make the list a flex container */
-    flex-wrap: wrap; /* allow the list items to wrap to the next line */
+    width: 30%; 
+    float: right; 
+    margin-left: 20px; 
+    display: flex; 
+    flex-wrap: wrap; 
 }
 .coding-skills h2 {
     font-size: 24px;
-    color: #ffffff; /* White text color */
+    color: #ffffff; 
     text-align: center;
     padding: 20px;
     text-shadow: 0 0 10px #221233, 0 0 20px #7a28cb, 0 0 30px #7a28cb; /* Purple neon glow effect */
@@ -131,30 +131,30 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* make the list a flex container */
-    flex-wrap: wrap; /* allow the list items to wrap to the next line */
-    justify-content: space-between; /* evenly space the list items */
+    display: flex; /*don't change this*/
+    flex-wrap: wrap; /* wraps them to the next line */
+    justify-content: space-between; /* evenly spaces the list items */
 }
 
 .coding-skills li {
-    margin-bottom: 40px; /* add some space between each skill */
-    text-align: center; /* center the icon and text */
-    width: 45%; /* adjust the width to fit 2 items in a row */
+    margin-bottom: 40px; 
+    text-align: center; 
+    width: 45%; /* fits 2 items in a row */
 }
 .coding-skills img {
-    width: 120px; /* increase the icon size */
-    margin-bottom: 10px; /* add some space between the icon and the text */
+    width: 120px; 
+    margin-bottom: 10px; 
 }
 
 .coding-skills img[src*="CSS-Logo"] {
-    width: 190px; /* make CSS logo larger */
+    width: 190px; /* make CSS logo larger because it was a different dimension */
 }
 
 .coding-skills img[src*="JavaScript-Logo"] {
-    width: 190px; /* make JavaScript logo larger */
+    width: 190px; /*same thing*/
 }
 
-/* New styles for project links with preview images */
+/* New styles for project links with their respective preview images */
 
 .project {
     display: inline-block;

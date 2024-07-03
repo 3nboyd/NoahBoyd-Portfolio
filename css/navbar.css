@@ -59,18 +59,18 @@
   padding: 1em 2em;
 }
 .menu > li.active {
-  background-color: #520a85; /* same as hover color */
+  background-color: #520a85; 
   color: #fff;
   transform: skewX(-25deg); /* skew 25 deg left */
 }
   
   .menu > li.active > a span {
-    transform: skewX(+25deg) !important; /* reset skew for text */
-    display: inline-block; /* to apply transform */
+    transform: skewX(+25deg) !important; /* reset skew for text, DO NOT CHANGE */
+    display: inline-block; /* applies the transform above */
   }
 
 .user-profile {
-  background-color: #131313; /* darker gray */
+  background-color: #131313; 
   width: 115px;
   padding: 10px;
   border-radius: 10px;

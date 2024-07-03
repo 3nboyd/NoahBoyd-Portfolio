@@ -1,10 +1,11 @@
+// the first visit variable is for if the user decides to reload the page so that the entire animation doesnt play again
 let isFirstVisit = true;
 
 document.addEventListener("DOMContentLoaded", function() {
   const videoContainer = document.querySelector(".background-image");
-  const video = videoContainer.querySelector("video"); // assuming the video element is inside .background-image
+  const video = videoContainer.querySelector("video"); // video element being inside the background image class
 
-  // Check if the user is at the top of the page and if it's the first visit
+  // This part checks if the user is at the top of the page and if it's the first visit
   if (window.scrollY === 0 && isFirstVisit) {
     // Play the video
     video.play();
@@ -12,26 +13,26 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add the animate class
     videoContainer.classList.add("animate");
   } else {
-    // If it's not the first visit or the user is not at the top of the page, skip the animation
+    // If it's not the first visit or the user is not at the top of the page, it should skip the animation
     videoContainer.classList.add("minimized");
     video.currentTime = 3.5;
   }
 
-  // Add the minimized class after the animation ends (if animation was triggered)
+  // Adds the minimized class after the animation ends (if animation was triggered)
   videoContainer.addEventListener("animationend", function() {
     videoContainer.classList.add("minimized");
 
     // Remove the minimized class after 3 seconds
     setTimeout(function() {
       videoContainer.classList.remove("minimized");
-    }, 3000);
+    }, 3000); //CHANGE THIS WITH THE CSS ANIMATION OR IT WON'T WORK CORRECTLY
   });
 
-  // Set flag to false for subsequent visits
+  // for subsequent visits
   isFirstVisit = false;
 });
 
-// Set a session storage key to track if the user has visited the page before
+//this is called a session storage key, thanks Youtube
 if (!sessionStorage.getItem("hasVisited")) {
   sessionStorage.setItem("hasVisited", true);
 } else {
@@ -40,10 +41,10 @@ if (!sessionStorage.getItem("hasVisited")) {
 
 document.addEventListener("DOMContentLoaded", function() {
   if (isFirstVisit) {
-    // Add the class to lock scrolling
+    // this part locks the scrolling
     document.body.classList.add("no-scroll");
 
-    // Remove the class after 2.5 seconds
+    // Removes the class from before after 2.5 seconds
     setTimeout(function() {
       document.body.classList.remove("no-scroll");
     }, 2500);

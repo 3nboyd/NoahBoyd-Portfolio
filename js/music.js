@@ -1,9 +1,5 @@
-$(window).on("load", function(){
-  $(".nb-loader-wrapper").fadeOut("slow");
-  $("body").removeClass("preload");
-})
 $(document).ready(function() {
-  // Generate content boxes dynamically
+  // content boxes are generated based from the arrays in the contentBoxes variable below
   let contentBoxes = [
     {
         image: "js/content/showchoir.png",
@@ -47,7 +43,7 @@ $(document).ready(function() {
     //     type: "",
     //     url: "contact.html" 
     // }
-    // optional see more box that can prompt to whatever instagram or contact link
+    // optional see more box that can prompt to whatever instagram or contact link if I don't end up making the show all button
 }];
 
 
@@ -89,7 +85,7 @@ let upcomingEvents = [
     image: "js/posters/BOAGrandNats2024.png",
     url: "https://marching.musicforall.org/wp-content/uploads/sites/5/2023/12/1920x1080_BOA24-WHITE-LIGHTNING-1280x640.png"
   },
-];
+];//above is my posters, same concept as before
 
 $.each(upcomingEvents, function(index, event) {
   let eventHTML = "";
@@ -108,7 +104,7 @@ $.each(upcomingEvents, function(index, event) {
   $(".event-grid").append(eventHTML);
 });
 
-// Add event listener to the "Show All" button
+// event listener for my "Show All" button below
 
 const showAllButtons = document.querySelectorAll('.show-all button');
 const contentGrids = document.querySelectorAll('.content-grid,.event-grid');

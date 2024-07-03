@@ -20,7 +20,7 @@
 .hero-image {
   position: relative;
   width: 100%;
-  height: 600px; /* adjust the height to your liking */
+  height: 600px; /* adjust depending on if I want to change the image*/
   overflow: hidden;
 }
 

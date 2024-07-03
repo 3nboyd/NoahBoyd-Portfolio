@@ -4,13 +4,13 @@
 body {
     font-weight: 600;
     color: #ffffff;
-    background-color: #191515; /* Dark background color */;
+    background-color: #191515;
     margin-top: var(--navbar-height);
 }
 header {
   display: flex;
   align-items: center;
-  background-image: url('headerimages/nextechcontact.jpg'); /* add your image here */
+  background-image: url('headerimages/nextechcontact.jpg');
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -18,7 +18,7 @@ header {
   border-radius: 10px;
   margin: 20px;
   margin-bottom: 0px;
-  position: relative; /* add this to create a stacking context */
+  position: relative; 
 }
 
 header::before {
@@ -28,8 +28,8 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #191515; /* your original background color */
-  opacity: 0.5; /* adjust the opacity to your liking */
+  background-color: #191515; 
+  opacity: 0.5; 
   border-radius: 10px;
 }
 h1 {
@@ -58,31 +58,31 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px; /* add a 40px gap between items */
+    gap: 40px; /* adds gap between items */
 }
 
 .social-media-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*do not change this*/
     align-items: center;
-    margin: 40px; /* increase the margin to 40px */
+    margin: 40px; 
 }
 
 .social-media-item img {
-    width: 80px; /* increase the icon size to 80x80 pixels */
+    width: 80px; 
     height: 80px;
-    margin-bottom: 20px; /* add more space between the icon and text */
+    margin-bottom: 20px; 
     border-radius: 10px;
 }
 
 .social-media-item p {
-    font-size: 24px; /* increase the text size to 24px */
+    font-size: 24px; 
     margin: 0;
 }
 
 .social-media a {
     text-decoration: none;
-    color: inherit; /* inherit the text color from the parent element */
+    color: inherit; /*takes from the parent element*/
 }
 
 .social-media a:hover {
@@ -90,17 +90,17 @@ h1 {
 }
 .hidden-email-btn {
     background-color: #7a28cb; /* same purple color as the navbar */
-    color: #ffffff; /* white text color */
-    padding: 10px; /* add some padding to the button */
-    border: none; /* remove the border */
-    border-radius: 5px; /* add some rounded corners */
-    cursor: pointer; /* change the cursor to a pointer on hover */
+    color: #ffffff; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
   }
   
   .hidden-email-btn:hover {
-    background-color: #5a1d8e; /* darker purple color on hover */
+    background-color: #5a1d8e; 
   }
-/*Some of the following is code that is taken from Formspree, the server I used to make the contact
+/*Some, not all, of the following is code that is taken from Formspree, the server I used to make the contact
 form functional, as they must incorporate their own code to send to the server*/
  #fs-frm input,
  #fs-frm select,

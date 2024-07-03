@@ -1,5 +1,3 @@
-
-// projects.js
 const projects = document.querySelectorAll('.project');
 
 projects.forEach((project) => {
@@ -10,9 +8,5 @@ projects.forEach((project) => {
     project.addEventListener('mouseout', () => {
         project.style.height = '200px';
     });
-});
+}); //^^^I could have definitely done this on css but oh well
 // loading screen on every page
-$(window).on("load", function(){
-    $(".nb-loader-wrapper").fadeOut("slow");
-    $("body").removeClass("preload");
-})

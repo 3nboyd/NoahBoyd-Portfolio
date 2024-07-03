@@ -1,5 +1,5 @@
 let navbarSections = document.querySelectorAll('.sections li a');
-
+// this is for the functionality of the active class in making it purple, thank you Youtube once again
 navbarSections.forEach((section) => {
   section.addEventListener('click', (e) => {
     const currentSection = e.target;
