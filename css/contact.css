@@ -215,7 +215,7 @@ form functional, as they must incorporate their own code to send to the server*/
   }
   
   #fs-frm input[type="submit"] {
-    width: 100%; /* make the submit button take up the full width of the form */
+    width: 103%; /* make the submit button take up the full width of the form */
     background-color: #7a28cb; /* same purple color as the navbar */
     color: #ffffff; /* white text color */
     padding: 10px; /* add some padding to the submit button */

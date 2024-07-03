@@ -63,8 +63,21 @@ h2 {
     text-align: center;
     padding: 20px;
 }
+h3 {
+    font-size: 24px;
+    color: #ffffff;
+    padding: 20px;
+}
 p {
     font-size: 20px;
+}
+a {
+    text-decoration: none; /* remove underline */
+    color: #ffffff; /* set text color to white */
+}
+
+a:hover {
+    text-decoration: underline; /* add underline on hover */
 }
 .left-column section {
     height: 100%; /* Makes the left column section take up the full height */
