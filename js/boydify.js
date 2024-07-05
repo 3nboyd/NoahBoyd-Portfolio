@@ -50,3 +50,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 2500);
   }
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const closeButton = document.querySelector('.resolution-warning-close');
+  if (closeButton) {
+    closeButton.addEventListener('click', function() {
+      document.querySelector('.resolution-warning').style.display = 'none';
+    });
+  }
+});

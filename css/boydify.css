@@ -244,7 +244,21 @@ h1 {
     color: #fff;
   }
   
-  /* display the warning on small screens or non-landscape orientations */
+  .resolution-warning-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .resolution-warning-close img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* display the warning on small or non-landscape orientations */
   @media only screen and (max-aspect-ratio: 4/3) {
     .resolution-warning {
       display: block;
